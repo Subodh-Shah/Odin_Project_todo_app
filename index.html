@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Todo App</title>
-  <link rel="stylesheet" href="/src/style.css">
-</head>
-<body>
-  <div class="todo-container">
-    <h1>✅ To-Do App</h1>
-    <div class="input-group">
-      <input type="text" id="taskInput" placeholder="Add a new task...">
-      <button id="addBtn">Add</button>
-    </div>
-    <ul id="taskList"></ul>
-  </div>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Todo App</title>
+		<style>
+			button {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="todo-container">
+			<h1>✅ To-Do App</h1>
+			<div class="input-group">
+				<input
+					type="text"
+					id="taskInput"
+					placeholder="Add a new task..." />
+				<button id="addBtn">Add</button>
+			</div>
+			<ul id="taskList"></ul>
+		</div>
 
-  <script src="/src/script.js"></script>
-</body>
+		<script src="/src/script.js"></script>
+	</body>
 </html>
