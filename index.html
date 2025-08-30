@@ -3,24 +3,40 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Todo App</title>
-		<style>
-			button {
-				cursor: pointer;
-			}
-		</style>
+		<link rel="stylesheet" href="/src/styles.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style></style>
 	</head>
+
 	<body>
-		<div class="todo-container">
-			<h1>✅ To-Do App</h1>
-			<div class="input-group">
+		<!-- Main Header -->
+		<header class="main-header">
+			<h1>📝 Todo App</h1>
+			<p>Organize your projects and tasks efficiently</p>
+		</header>
+
+		<!-- Floating Button for New Project -->
+		<button id="createProjectBtn" class="floating-btn">
+			+ New Project
+		</button>
+
+		<!-- Modal for New Project -->
+		<div id="projectModal" class="modal">
+			<div class="modal-content">
+				<h2>Create New Project</h2>
 				<input
 					type="text"
-					id="taskInput"
-					placeholder="Add a new task..." />
-				<button id="addBtn">Add</button>
+					id="projectNameInput"
+					placeholder="Enter project name..." />
+				<div class="modal-actions">
+					<button id="saveProjectBtn">Save</button>
+					<button id="cancelProjectBtn">Cancel</button>
+				</div>
 			</div>
-			<ul id="taskList"></ul>
 		</div>
+
+		<!-- Container for To-Do App -->
+		<div id="projectContainer"></div>
 
 		<script src="/src/script.js"></script>
 	</body>
